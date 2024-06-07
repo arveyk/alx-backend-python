@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Module type checking concept
 """
-
-
-Tuple: tuple[any, ...]
+from typing import Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
