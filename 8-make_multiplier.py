@@ -10,10 +10,10 @@ def make_multiplier(multiplier: float) -> Callable[[float] float]:
     Args:
         multiplier: a number to multiply by
     Return: the function to do the multiplication
-    """    
+    """
     def mul(mul_plier: float):
         """Function that multiplies an argument by a given argument
         """
         return mul_plier * 1.4239
-    
+
     return mul(multiplier)
