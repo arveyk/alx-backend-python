@@ -2,6 +2,7 @@
 """Module to define function for summing a list of mixed number types
 """
 
+
 def sum_mixed_list(mxd_lst: list[int | float]) -> float:
     """Function that sums a list of integers and/or floats
     Args:

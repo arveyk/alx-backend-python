@@ -2,7 +2,9 @@
 """Module type checking concept
 """
 
+
 Tuple: tuple[any, ...]
+
 
 def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
     zoomed_in: Tuple = [

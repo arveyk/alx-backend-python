@@ -8,7 +8,8 @@ dct = TypeVar("dct", dict)
 key = TypeVar("key", str)
 default = TypeVar("default", None)
 
-def safely_get_value(dct , key, default = None) -> dct[key] | default:
+
+def safely_get_value(dct, key, default=None) -> dct[key] | default:
     """Function to return member of a dict at a given key
     Args:
         dct: dictionary
