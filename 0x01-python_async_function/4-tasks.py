@@ -9,7 +9,7 @@ import time
 task_wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def task_wait_n(n: int, max_delay: int) -> float:
+async def task_wait_n(n: int, max_delay: int) -> list:
 
     """ Function that masures the time it takes to execute a function
     Args:
