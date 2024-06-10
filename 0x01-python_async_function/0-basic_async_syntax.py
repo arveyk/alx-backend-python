@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Writing asyncronous routines
+"""Writing asyncronous routines that generates a random number
+and wints for the amount of time equal to that generated number
 """
-import random
 import asyncio
+import random
 
 
-async def wait_random(max_delay: int = 10) -> int:
+async def wait_random(max_delay: int = 10) -> float:
     """ Function that waits for some second
     Args:
         max_delay: the maximum amount of time to wait
