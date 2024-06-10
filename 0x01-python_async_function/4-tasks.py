@@ -22,5 +22,12 @@ async def task_wait_n(n: int, max_delay: int) -> list:
         delay = await task_wait_random(max_delay)
         list_len = len(result_list)
         result_list.append(delay)
-    list.sort(result_list)
-    return result_list
+    list_fin = []
+    while result:
+        small = result_list[0]
+        for i in (result_list):
+            if i < small:
+                small = i
+        list_fin.append(small)
+        result_list.remove(small)
+    return list_fin
