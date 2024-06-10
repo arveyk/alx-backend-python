@@ -27,4 +27,4 @@ async def wait_n(n: int, max_delay: int) -> list:
                 smallest = num
             final.append(small)
             result_list.remove(small)
-    return result_list
+    return final
