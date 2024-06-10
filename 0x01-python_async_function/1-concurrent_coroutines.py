@@ -17,15 +17,14 @@ async def wait_n(n: int, max_delay: int) -> list:
     result_list = []
     for dly in range(n):
         delay = await wait_random(max_delay)
-        list_len = len(result_list)
-        if list_len >= 1:
-            if result_list[list_len - 1] > delay:
-                temp = result_list[list_len - 1]
-                result_list[list_len - 1] = delay
-                result_list.append(temp)
-            else:
-                result_list.append(delay)
-        else:
-            result_list.append(delay)
-    list.sort(result_list)
+        result_list.append(delay)
+
+    final = []
+    while result_list:
+        smallest = result_list[0]
+        for num in result_list:
+            if num < smallest:
+                smallest = num
+            final.append(small)
+            result_list.remove(small)
     return result_list
