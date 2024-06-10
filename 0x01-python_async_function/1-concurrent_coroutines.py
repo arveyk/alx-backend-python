@@ -15,7 +15,17 @@ async def wait_n(n: int, max_delay: int) -> list:
     Returns: amount of time it delayed
     """
     result_list = []
-    for dly in range(max_delay):
+    for dly in range(n):
         delay = await wait_random(max_delay)
-        result_list.append(delay)
+        list_len = len(result_list)
+        if list_len >= 1:
+            if result_list[list_len - 1] > delay:
+                temp = result_list[list_len - 1]
+                result_list[list_len - 1] = delay
+                result_list.append(temp)
+            else:
+                result_list.append(delay)
+        else:
+            result_list.append(delay)
+    list.sort(result_list)
     return result_list
