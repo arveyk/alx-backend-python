@@ -14,5 +14,5 @@ async def async_comprehension() -> list:
         None
     Returns: yields some numbers
     """
-    result = [i async for i in async_generator()]
+    result = [rand_num async for rand_num in async_generator()]
     return result
