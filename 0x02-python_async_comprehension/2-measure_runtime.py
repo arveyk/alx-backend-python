@@ -3,11 +3,12 @@
 """
 import time
 import asyncio
+from typing import Never
 
 asyncCom = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime():
+async def measure_runtime() -> Never:
     """
     Function to measure runtime
     Args:
