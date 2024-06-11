@@ -12,7 +12,7 @@ async def async_comprehension() -> list:
     """ Function to implement async comprehension
     Args:
         None
-    Returns: yields some numbers
+    Returns: list of the amount of waiting time
     """
     result = [rand_num async for rand_num in async_generator()]
     return result
