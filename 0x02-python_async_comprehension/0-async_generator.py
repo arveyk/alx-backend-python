@@ -3,7 +3,7 @@
 """
 
 
-async def async_generator() -> float:
+async def async_generator(None) -> float:
     """ Generator function
     Args : none
     Returns: yields some numbers
