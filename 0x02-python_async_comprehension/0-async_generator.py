@@ -6,8 +6,10 @@ import random
 
 
 async def async_generator() -> float:
-    """ Generator function
-    Args : none
+    """
+    Generator function that loops 10 times and yields a number each time
+    Args:
+        None
     Returns: yields some numbers
     """
     for i in range(10):
