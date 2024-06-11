@@ -3,7 +3,7 @@
 """
 import time
 import asyncio
-from typing import Never
+
 
 asyncCom = __import__('1-async_comprehension').async_comprehension
 
