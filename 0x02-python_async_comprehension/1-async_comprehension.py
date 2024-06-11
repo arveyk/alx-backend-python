@@ -4,12 +4,14 @@
 import asyncio
 import random
 
+
 async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> list:
     """ Function to implement async comprehension
-    Args : none
+    Args:
+        None
     Returns: yields some numbers
     """
     result = [i async for i in async_generator()]
