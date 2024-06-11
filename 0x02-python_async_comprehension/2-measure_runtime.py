@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Module for function that measures runtime
 """
-import time
 import asyncio
+import time
 
 
 asyncCom = __import__('1-async_comprehension').async_comprehension
