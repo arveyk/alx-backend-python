@@ -3,11 +3,13 @@
 Module for 1-concurrent_coroutine
 for executing multiple coroutines
 """
+from typing import List
+
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """ Function that waits for some second
     Args:
         n: some number
@@ -19,12 +21,10 @@ async def wait_n(n: int, max_delay: int) -> list:
         delay = await wait_random(max_delay)
         result_list.append(delay)
 
-    final = []
-    while result_list:
-        smallest = result_list[0]
-        for num in result_list:
-            if num < smallest:
-                smallest = num
-            final.append(small)
-            result_list.remove(small)
-    return final
+    length = len(result_list)
+    for i in range(length):
+        for k in range(i + 1, length):
+            if result_list[i] > result_list[k]:
+                result_list[i],  result_list[k] =\
+                        result_list[k], result_list[i]
+    return result_list
