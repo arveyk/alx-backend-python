@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Module to explore Duck-typing
 """
+from typing import Any, Sequence, Union
 
-
-def safe_first_element(lst: any) -> any | None:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any,  None]:
     """Function to demo ducktyping
     Args:
         lst: list variable
