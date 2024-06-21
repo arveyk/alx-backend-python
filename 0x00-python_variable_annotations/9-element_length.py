@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Module to explore duck typing
 """
-from collections.abc import Sequence
+from typing import Sequence, List, Tuple
 
 
-def element_length(lst: list[int]) -> tuple(int, int):
+def element_length(lst: List[int]) -> List[Tuple[Sequence, int]]:
     """Function that return the length of an iterable
     Args:
         lst: list whose length is to be evaluated
