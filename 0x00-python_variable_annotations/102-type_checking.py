@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Module type checking concept
 """
-from typing import Tuple, List
+from typing import Tuple, List, Any
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple[Any]:
     """Function to zoom into a list by a given factor
     Args:
         lst: list of numbers to be zoomed
