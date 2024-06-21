@@ -2,12 +2,12 @@
 """ Module for running tasks
 """
 import asyncio
-
+from typing import Awaitable
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int) -> _asyncio.Task:
+def task_wait_random(max_delay: int) -> Awaitable:
     """Task generating function
     Args:
         max_delay: maximum amount of time to delay
