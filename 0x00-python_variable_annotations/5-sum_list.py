@@ -3,6 +3,7 @@
 """
 from typing import List
 
+
 def sum_list(input_list: List[float]) -> float:
     """Function to add a list of floats
     Args:
