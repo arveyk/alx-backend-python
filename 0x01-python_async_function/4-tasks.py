@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Async Function
 """
-
+from typing import List
 import asyncio
 import time
 
@@ -9,7 +9,7 @@ import time
 task_wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def task_wait_n(n: int, max_delay: int) -> list:
+async def task_wait_n(n: int, max_delay: int) -> List[int]:
 
     """ Function that masures the time it takes to execute a function
     Args:
@@ -18,12 +18,13 @@ async def task_wait_n(n: int, max_delay: int) -> list:
     Returns: amount of time used
     """
     result_list = []
+    list_fin = []
     for dly in range(n):
         delay = await task_wait_random(max_delay)
         list_len = len(result_list)
         result_list.append(delay)
-    list_fin = []
-    while result:
+    length = len(result_list)
+    for i in range(length):
         small = result_list[0]
         for i in (result_list):
             if i < small:
