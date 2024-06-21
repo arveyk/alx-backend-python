@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 """Module for function 101-safely get value
 """
-from typing import TypeVar
+from typing import Any, Union, Mapping, TypeVar
 
 
-dct = TypeVar("dct", dict)
-key = TypeVar("key", str)
-default = TypeVar("default", None)
+T = TypeVar('T')
 
 
-def safely_get_value(dct, key, default=None) -> dct[key] | default:
+def safely_get_value(dct: Mapping, key: Any, default: Union[T, None] = None) -> Union[Any, T]:
     """Function to return member of a dict at a given key
     Args:
         dct: dictionary
