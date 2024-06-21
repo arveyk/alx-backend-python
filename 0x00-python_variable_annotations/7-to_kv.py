@@ -2,7 +2,7 @@
 """Module to define function for returning a tuple made up of
 the arguments it is supplied
 """
-from  typing import Union, Tuple
+from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
