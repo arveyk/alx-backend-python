@@ -8,6 +8,6 @@ def floor(n: float) -> int:
     Args:
         n: the float to be floored
     Returns: the floored result"""
-    from math import floor 
+    from math import floor
 
     return floor(n)
