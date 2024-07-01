@@ -9,7 +9,7 @@ access_nested_map = __import__("utils")
 class TestAccessNestedMap(unittest.TestCase):
     """Class for testing the method access_nested_map
     """
-    @parameterized.expand([
+    @parameterized([
         ({"a": 1}, ("a", )),
         ({"a": {"b": 2}}, ("a", "b"))
         ])
