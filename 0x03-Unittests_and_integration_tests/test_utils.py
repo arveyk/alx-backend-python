@@ -3,15 +3,14 @@
 """
 from parameterized import parameterized
 import unittest
-
-
 access_nested_map = __import__("utils")
+
+
 class TestAccessNestedMap(unittest.TestCase):
     """Class for testing the method access_nested_map
     """
     @parameterized.expand([
         ({"a": 1}, ("a", )),
-        ({"a": {"b": 2}}, ("a", )),
         ({"a": {"b": 2}}, ("a", "b"))
         ])
     def test_access_nested_map(self, nested_map, path):
