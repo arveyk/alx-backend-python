@@ -3,7 +3,7 @@
 """
 from parameterized import parameterized
 import unittest
-access_nested_map = __import__("utils")
+access_nested_map = __import__("utils").access_nested_map
 
 
 class TestAccessNestedMap(unittest.TestCase):
